@@ -1,0 +1,43 @@
+{
+  "cli": {
+    "fmtVersion": 3
+  },
+  "name": "E-R_Network",
+  "description": "Emitter / Reciever Network protocol inspired by Radio Teletype messaging systems.",
+  "sourcePath": "src",
+  "outputPath": "out",
+  "libs": [],
+  "builds": {
+    "main": {
+      "name": "main",
+      "type": "control",
+      "slots": {
+        "memoryStore": {
+          "name": "memoryStore",
+          "type": "databank"
+        },
+        "readFrom": {
+          "name": "readFrom",
+          "type": "receiver"
+        },
+        "writeTo": {
+          "name": "writeTo",
+          "type": "emitter"
+        }
+      }
+    }
+  },
+  "targets": {
+    "development": {
+      "name": "development",
+      "minify": false,
+      "handleErrors": false
+    }
+  },
+  "internalPaths": [
+    "autoconf/",
+    "cpml/",
+    "pl/",
+    "utils/event"
+  ]
+}
